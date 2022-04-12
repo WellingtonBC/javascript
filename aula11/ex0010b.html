@@ -10,7 +10,7 @@
     <h1>Nativo ou Estrangeiro?</h1>
 
     <p>
-        Qual a sua nacionalidade: 
+        Qual a seu país de origem: 
         <input type="text" name="txtpaís" id="txtpaís">
         <input type="button" value="Analisar" id="analisar" onclick="analisar()">       
     </p>
@@ -27,14 +27,15 @@
 
             res.innerHTML = `<p>Você nasceu no <strong>${nac}</strong>.</p>`
 
-            if (nac >= 'Brasil') {
+            if (nac == 'Brasil') {
                 res.innerHTML += `<p>Você é <strong>Brasileiro</strong>.</p>`
-            } 
-
-            if (nac != 'Brasil') {
-                res.innerHTML += `<p>Você é <strong>Estrangeiro</strong>.</p>`
+            } else {
+                if (nac < 'Brasil') {
+                    res.innerHTML += `<p>Você é <strong>Estrangeiro</strong>.</p>`
+                } else {
+                    res.innerHTML += `<p>Você é <strong>Estrangeiro</strong>.</p>`
+                }
             }
-            /*Ainda não obtive conhecimento para completar, espero corrigir algum dia (se eu lembrar kkkkkk)*/
         }
     </script>
     
