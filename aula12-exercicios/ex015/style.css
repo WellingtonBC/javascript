@@ -9,9 +9,10 @@ body {
 header h1 {
     color: white;
     text-align: center;
+    text-shadow: 2px 2px 0px black;
 }
 
-section {
+main {
     background-color: white;
     padding: 21px;
     width: 500px;
@@ -20,9 +21,15 @@ section {
     box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.685);
 }
 
+.res {
+    text-align: center;
+}
+
 footer {
     color: white;
     text-align: center;
     font-style: italic;
+    text-shadow: 1px 1px 0px black;
+
 }
 
